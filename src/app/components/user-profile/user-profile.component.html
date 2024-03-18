@@ -1,0 +1,68 @@
+<!-- <p>user-profile works!</p> -->
+<!-- interpolation => {{}} -->
+<!-- <h4>Name : {{ name | uppercase}}</h4>  -->
+<!-- Pipes => | -->
+<!-- <h4>Status : {{ status }}</h4> -->
+<!-- <h4>Salary : {{ salary | currency : "INR"}}</h4> -->
+
+<!-- <h2>{{phoneno | countryCode : "INR"}}</h2> -->
+<!-- <button [disabled]="isBtnDisabled">Click Me</button>  -->
+<!-- property binding => [disbled] like this  -->
+
+<!-- if event binding => () bracket and if property binding => [] -->
+
+
+<!-- <h2>{{inputVal}}</h2>  
+ <input type="text" [value] = "inputVal" (input) = "onChange($event)">    -->
+<!-- two way data binding  means value is changing and also reflecting on dom -->
+
+<!-- either we can use change or input for getting value while typing -->
+
+<!-- in angular we dont use onchange instead we use change like this events -->
+
+
+<!-- <input type="text" [(ngModel)] = "inputVal">   -->
+
+
+<!-- Control Flow Syntax -->
+<!-- Control flow are used between html element -->
+  <!-- <div>
+    @for(user of users; track user.name){
+        @if(user.salary > 10000){
+
+    <h2>Name : {{user.name}} , Status : {{user.isSingle ? "Developer" : "Female"}} , Salary : {{user.salary}}</h2>
+    }
+    @else{
+        <h2>Name : {{user.name}} Status : {{user.isSingle}} Salary : hidden</h2>
+    }
+}
+</div>
+
+<hr/>   -->
+<!-- Directives Syntax -->
+<!-- 
+  <div *ngFor="let user of users">
+
+    <h2 *ngIf="user.salary > 10000;else elseBlock">Name : {{user.name}} , Status : {{user.isSingle ? "Developer" : "Female"}} , Salary : {{user.salary}}</h2>  
+     ng-template using for accesing #elseBlock  
+      <ng-template #elseBlock>
+        <h4>Name : {{user.name}} , Status : {{user.isSingle ? "Developer" : "Female"}} , Salary : {{user.salary}}</h4>
+    </ng-template>
+</div>   -->
+
+
+<!-- E.g directives => *ngFor , *ngIf -->
+<!-- directives are used inside the html element  -->
+
+
+<!-- Types of Directive
+1. Structural Directive =>  *ngFor , *ngIf  :: Start with *
+2.  Attribute Directive => Directive that used as Attribute  e.g : [(ngModel)]
+--> 
+
+<!-- What are directives :  Directives are classes which can be used to change or modify element behaviour and enhance the functionality of it -->
+
+<h1 [style.backgroundColor] = "bgColor">Name - {{name}} Status : {{isSingle ? "Developer" : "Female"}} Salary : {{salary}}</h1>
+
+<button (click)="sendData()">Send Data</button>
+

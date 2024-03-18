@@ -1,0 +1,18 @@
+<h2>Hello World</h2>
+
+
+<!--  **** Parent to Child Data Transfer  **** -->
+
+<!-- <app-user-profile userName="Goldberg" isSingle="true" salary="40000"></app-user-profile>
+<app-user-profile userName="Arclyn"  isSingle="false"  salary="32000"></app-user-profile>
+<app-user-profile userName="Roshan"  isSingle="true"  salary="30000"></app-user-profile> -->
+
+
+<!-- Dynamic Data Transfer using directives -->
+
+<!-- <app-user-profile *ngFor="let u of users"  [userName]="u.name" [isSingle]="u.isSingle" [salary]="u.salary" ></app-user-profile>
+ -->
+
+<!-- ***** Child to Parent Data Passing ***** -->
+ 
+<app-user-profile *ngFor="let u of users"  [userName]="u.name" [isSingle]="u.isSingle" [salary]="u.salary" (myEvent)="receivedData($event)"></app-user-profile>
