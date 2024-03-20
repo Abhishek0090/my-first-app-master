@@ -10,9 +10,9 @@
 
 <!-- Dynamic Data Transfer using directives -->
 
-<!-- <app-user-profile *ngFor="let u of users"  [userName]="u.name" [isSingle]="u.isSingle" [salary]="u.salary" ></app-user-profile>
- -->
+<app-user-profile *ngFor="let u of users"  [userName]="u.name" [isSingle]="u.isSingle" [salary]="u.salary" ></app-user-profile>
+
 
 <!-- ***** Child to Parent Data Passing ***** -->
- 
-<app-user-profile *ngFor="let u of users"  [userName]="u.name" [isSingle]="u.isSingle" [salary]="u.salary" (myEvent)="receivedData($event)"></app-user-profile>
+
+<!-- <app-user-profile *ngFor="let u of users"  [userName]="u.name" [isSingle]="u.isSingle" [salary]="u.salary" (myEvent)="receivedData($event)"></app-user-profile> -->

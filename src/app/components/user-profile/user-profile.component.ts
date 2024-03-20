@@ -33,7 +33,7 @@ export class UserProfileComponent {
     this.myEvent.emit({name : this.name,newSalary :20000})
   }
 
-    bgColor = "red"
+    bgColor = ""
   // name = 'Abhishek';
   status = 'single';
   phoneno = 123456789
